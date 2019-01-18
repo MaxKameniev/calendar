@@ -75,8 +75,47 @@
     display: block;
 }
 
+.label__text {
+    color: var(--dg-color);
+    font-size: 17px;
+    font-family: var(--font-family);
+}
+
+.label__text:hover {
+    color: #fff;
+}
+
+.checkbox__item {
+    padding: 2.5px 0 2.5px 10px;
+}
+
+.checkbox__item:hover {
+    background-color: var(--dg-color);
+}
+
 .timezone__title {
     margin-top: 10px;
+}
+
+.timezone__selection {
+    position: absolute;
+    right: 12px;
+    width: calc(100% - 28px);
+    height: 160px;
+    background-color: #fff;
+    border-width: 0 2px 2px 2px;
+    border-color: var(--lg-color);
+    border-style: solid;
+    border-radius: 0 0 2px 2px;
+    z-index: 1;
+}
+
+.timezone--hidden {
+    display: none;
+}
+
+.timezone--showed {
+    display: block;
 }
 
 .datechoose__block {
@@ -103,6 +142,32 @@
     border: 2px solid var(--lg-color);
     border-radius: 2px;
     margin-top: 5px;
+}
+
+.dateFrom__selection, .dateTo__selection {
+    position: absolute;
+    width: calc(100% - 28px);
+    height: 300px;
+    background-color: #fff;
+    border-width: 2px 2px 2px 2px;
+    border-color: var(--lg-color);
+    border-style: solid;
+    border-radius: 0 0 2px 2px;
+    right: 12px;
+    top: 186px;
+    z-index: 1;
+}
+
+.dateTo__selection {
+    right: -176px;
+}
+
+.selection--hidden {
+    display: none;
+}
+
+.selection--showed {
+    display: block;
 }
 
 .buttons_block {
