@@ -1,0 +1,129 @@
+:root {
+    --dg-color: #505c6d;
+    --lg-color: #bebebe;
+    --font-family: sans-serif;
+}
+
+#root {
+    width: 390px;
+    margin: 30px auto;
+}
+
+.calendar__title {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+    border: 2px solid var(--dg-color);
+    border-radius: 2px 2px 0 0 ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title__name {
+    color: var(--dg-color);
+    font-size: 18px;
+    font-family: var(--font-family);
+    margin-left: 10px;
+}
+
+.title__icon {
+    color: var(--dg-color);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.calendar__body {
+    position: relative;
+    height: 230px;
+    border-width: 0 2px 2px 2px;
+    border-color: var(--dg-color);
+    border-style: solid;
+    border-radius: 0 0 2px 2px;
+    padding-top: 10px;
+}
+
+.period__date, .timezone__title {
+    width: calc(100% - 28px);
+    height: 40px;
+    border: 2px solid var(--lg-color);
+    border-radius: 2px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.period__checkbox {
+    position: absolute;
+    right: 12px;
+    width: calc(100% - 28px);
+    height: 160px;
+    background-color: #fff;
+    border-width: 0 2px 2px 2px;
+    border-color: var(--lg-color);
+    border-style: solid;
+    border-radius: 0 0 2px 2px;
+    z-index: 1;
+}
+
+.checkbox--hidden {
+    display: none;
+}
+
+.checkbox--showed {
+    display: block;
+}
+
+.timezone__title {
+    margin-top: 10px;
+}
+
+.datechoose__block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 362px;
+    margin: 10px auto 0;
+}
+
+.datechoose__block  span {
+    color: var(--dg-color);
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+
+.date__block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    border: 2px solid var(--lg-color);
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.buttons_block {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+}
+
+.button {
+    padding: 5px 15px;
+    border: 2px solid var(--lg-color);
+    border-radius: 2px;
+    background-color: #fff;
+    color: var(--dg-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: #ed1c24;
+    border: 2px solid transparent;
+    color: #fff;
+}
